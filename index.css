@@ -1,21 +1,68 @@
 body, html {
   height: 100%;
-}
-
-.parallax {
-  background-image: url("./images/meio-ambiente.jpg");
-
+  background-image: url("./images/eolica3.gif");  
   height: 100%;
+  width: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.content {
-  margin-top: 110%;
+.title {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  position: relative;
 }
 
-.content a{
-  color: aliceblue;
+.title a{
+  position: relative;
+  top: 50%;
+  font-size: 5em;
+  font-weight: bold;
+}
+
+.first-content {
+  background-color: transparent;
+  background-color: #ffffff10;
+  backdrop-filter: blur(1000px);
+  height: 100vh;
+  width: 100%;
+}
+
+.content p{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.content p a{
+  position: relative;
+  margin-top: 25%;
+  font-size: 1.5em;
+}
+.content p img{
+  position: relative;
+  margin-top: 25%;
+  font-size: 1.5em;
+}
+
+.first-content p a {
+  color: black;
+}
+
+.second-content {
+  background-image: url("./images/eolica2.gif");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.second-content p a{
+  color: white;
 }
