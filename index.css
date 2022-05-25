@@ -337,10 +337,6 @@ footer {
   margin: 1%;
 }
 
-.calculator-cont label {
-
-}
-
 .calculator-cont input {
   width: calc(100% - 60px);
   padding: 15px;
