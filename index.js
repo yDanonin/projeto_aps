@@ -11,3 +11,11 @@ function openForm() {
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
+
+function calcExpense() {
+    var expense = document.getElementById("expense_calc").value;
+    var tariff = document.getElementById("tariff_calc").value;
+
+    result = expense * tariff;
+    document.getElementById("texto_teste").textContent = "result: " + result + ".";
+}
