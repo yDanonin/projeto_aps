@@ -16,6 +16,7 @@ function calcExpense() {
     var expense = document.getElementById("expense_calc").value;
     var tariff = document.getElementById("tariff_calc").value;
 
-    result = expense * tariff;
-    document.getElementById("texto_teste").textContent = "result: " + result + ".";
+    result = (expense * tariff) * 30;
+    result_formtd = (Math.round(result *100) / 100).toFixed(2);
+    document.getElementById("texto_teste").textContent = " R$" + result_formtd;
 }
