@@ -8,7 +8,7 @@
 body, html {
   margin: 0;
   padding: 0;
-  height: 100%;
+  height: fit-content;
   width: 100%;
   background-image: url("./images/eolica3.gif");  
   background-attachment: fixed;
@@ -27,6 +27,7 @@ body, html {
   color: var(--light);
   font-size: 30px;
   position: fixed;
+  top: 0;
   z-index: 1;
   justify-content: space-between;
   text-shadow: black 1px 2px 1px;
@@ -68,6 +69,11 @@ body, html {
   
 }
 
+.nav-link a {
+  color: var(--light);
+  text-decoration: none;
+}
+
 .navbar a:hover{
   color: var(--primary-color);
   font-size: 0.82em;
@@ -107,9 +113,9 @@ body, html {
 }
 
 .content p{
-  width: 100%;
   display: flex;
   justify-content: space-around;
+  font-size: 1.5em;
   /* justify-content: center;
   vertical-align: center; */
 }
@@ -117,22 +123,30 @@ body, html {
 .content p a{
   position: relative;
   margin-top: 10%;
-  /* transform: translateY(50%); */
-  vertical-align: center;
-  font-size: 1.5em;
-  margin-left: 10%;
-  margin-right: 10%;
+  /*font-size: 1.5em;*/
+  margin-left: 5%;
 }
 
 .content p img{
   position: relative;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
   margin-top: 10%;
   font-size: 1.5em;
   border-radius: 0.5em;
+  height: fit-content;
 }
 
+.content-a {
+  color:black;
+  margin: 0;
+  display: inline-block;
+}
+
+.content-p {
+  margin: 2% 5%;
+}
+/* <span><a href="https://brasil.un.org/pt-br/sdgs/7" target="_blank">ODS 7</a></span>*/
 .content-sect-1 p a {
   color: var(--dark);
 }
@@ -199,6 +213,9 @@ body, html {
   font-size: 1.5em;
 } */
 
+#textoLampada {
+  margin-right: 15px;
+}
 .content-sect-3 {
   /* background-color: #ffffff10;
   backdrop-filter: blur(80px); */
@@ -256,7 +273,7 @@ body, html {
 
 /* Full-width input fields */
 .form-container input[type=text], .form-container input[type=password] {
-  width: 100%;
+  width: -webkit-fill-available;
   padding: 15px;
   margin: 5px 0 22px 0;
   border: none;
@@ -289,4 +306,61 @@ body, html {
 /* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
+}
+
+.foot-sec {
+  padding-left: 2%;
+  background-color: #343a40;
+}
+
+.foot-sec a {
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--light);
+}
+
+/* Styles for Calculator Page */
+
+.calculator {
+  background-color: white;
+  margin: 10% 5% 1% 5%;
+  height: 80vh;
+}
+
+
+.calculator-cont {
+  width: 100%;
+  margin: 1%;
+}
+
+.calculator-cont label {
+
+}
+
+.calculator-cont input {
+  width: calc(100% - 60px);
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.calculator-cont input:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.calculator-cont .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: calc(100% - 30px);
+  margin-bottom:10px;
+  opacity: 0.8;
 }
