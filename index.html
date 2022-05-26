@@ -6,15 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Energyze</title>
   <link href="./index.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <script src="index.js" type="text/javascript"></script>
 </head>
 <body onload="letterPerSecond('Sustentabilidade Energética')">
   <header class="navbar">
     <h1>Energyze</h1>
     <div class="nav-link">
-      <a>Contatos</a>
-      <a>Sobre nós</a>
+      <a href="#foot-anchor">Contatos</a>
       <a href="subpages/calculadora.html">Calculadora</a>
+      <a href="index.html">Inicío</a>
     </div>
   </header>
 
@@ -66,10 +67,9 @@
     <div class="content">
       <p>
         <img id="lampada" src="./images/apagada.jpg" onclick="lampada('./images/acesa.png')"/>
-        <a id="textoLampada">Contudo, <strong>NÃO</strong> estamos aqui para falar sobre a história da energia.</a>
-      </p>
-      <h3 id="aviso">Clique na Lampada<h3></h3>
-      
+        <a id="textoLampada">Contudo, <strong>NÃO</strong> estamos aqui para falar sobre a história da energia.
+        Clique na Lâmpada!</a>
+      </p>      
       <!-- aqui é pra ser a lampada em js, com ela desligada vai estar escrito ao lado:-->
       <!-- ao pressionar a lampada e a lampada ligar, o texto muda e vai aparecer:
       <p>Estamos aqui para conscientizar sobre o uso da enérgica elétrica!
@@ -80,7 +80,7 @@
     <div class="title">
       <h1>Fontes renovaveis e fontes não renovaveis</h1>
     </div>
-    <div class="content">
+    <div class="content" id="teste">
       <p>
         <a>Energias renováveis são aquelas que irão se regenerar espotaneamente com ou sem a intervenção humana, e de modo geral elas são considerar limpas pois não deixam residuos significativos na natureza. 
           Exemplos:
@@ -104,33 +104,13 @@
         da agenda 2030 de desenvolvimento sustentavel da ONU.</span></p>
       </div>
   </section>
-  
-  <section class="calc">
-    
-    <h2>Simular consumo de energia</h2>
-    <Button class="open-button" onclick="location.href='subpages/calculadora.html'">Calculadora</Button>
-    <div class="form-popup" id="myForm">
-      <form class="form-container">
-        <h1>Login</h1>
-    
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" required>
-    
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-    
-        <button type="submit" class="btn">Login</button>
-        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-      </form>
-    </div>
-  </section>
   <!--Calculadora aqui-->
   <!--Sobre nós
   Nós somos estudantes de Ciência da Computação da Universidade Paulista,
   e construimos esse website como projeto para as Atividades Práticas Supervisionadas!
   -->
   <!--Footer aqui com os contatos e direito reservados-->
-  <section class="foot-sec">
+  <section class="foot-sec" id="foot-anchor">
     <a href="https://github.com/zDarkOrdening" target="_blank"><img src="images/GitHub-Mark-Light-32px.png">Leonardo</a>
     <a href="https://github.com/GaOS-Oliveira" target="_blank"><img src="images/GitHub-Mark-Light-32px.png">Gabriel</a>
     <a href="https://github.com/yDanonin" target="_blank"><img src="images/GitHub-Mark-Light-32px.png">Fabiano</a>

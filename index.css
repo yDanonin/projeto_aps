@@ -15,6 +15,11 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+}
+
+section h1 {
+  font-family: 'Bebas Neue', cursive;
 }
 
 .navbar {
@@ -214,13 +219,15 @@ body, html {
 } */
 
 #textoLampada {
+  margin-top: 25%;
   margin-right: 15px;
   width: 60%;
 }
 .content-sect-3 {
   /* background-color: #ffffff10;
   backdrop-filter: blur(80px); */
-  background-color: #295872;
+  background-color: #ffffff10;
+  backdrop-filter: blur(80px);
   display: inline-block;
   height: auto;
   width: auto;
@@ -312,6 +319,8 @@ body, html {
 .foot-sec {
   padding-left: 2%;
   background-color: #343a40;
+  text-align: center;
+  padding: 0.8%;
 }
 
 .foot-sec a {
@@ -322,6 +331,9 @@ body, html {
 footer {
   text-align: center;
   background-color: var(--light);
+  font-family: 'Bebas Neue', cursive;
+  background-color: #343a40;
+  color: white;
 }
 
 /* Styles for Calculator Page */
@@ -360,4 +372,9 @@ footer {
   width: calc(100% - 30px);
   margin-bottom:10px;
   opacity: 0.8;
+}
+
+#teste {
+  margin-top: -5%;
+  margin-bottom: 5%;
 }
