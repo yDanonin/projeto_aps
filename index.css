@@ -5,21 +5,21 @@
   --primary-color: #99c0ef;
 }
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   height: fit-content;
   width: 100%;
-  background-image: url("./images/eolica3.gif");  
+  background-image: url("./images/eolica3.gif");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 section h1 {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
 }
 
 .navbar {
@@ -45,7 +45,7 @@ section h1 {
   padding: 0;
   display: inline-block;
   padding: 2% 1%;
-  margin-top: -0.3em;  
+  margin-top: -0.3em;
 }
 
 .navbar h1 {
@@ -55,11 +55,10 @@ section h1 {
   position: relative;
   display: inline-block;
   align-self: center;
-  margin-top: -0.1em;  
-
+  margin-top: -0.1em;
 }
 
-.navbar h1:hover{
+.navbar h1:hover {
   color: var(--primary-color);
   cursor: pointer;
   transition: 0.8s;
@@ -71,7 +70,6 @@ section h1 {
   padding: 0;
   float: right;
   justify-content: space-around;
-  
 }
 
 .nav-link a {
@@ -79,7 +77,7 @@ section h1 {
   text-decoration: none;
 }
 
-.navbar a:hover{
+.navbar a:hover {
   color: var(--primary-color);
   font-size: 0.82em;
   text-decoration: underline;
@@ -96,7 +94,7 @@ section h1 {
   background-color: #343a4050;
 }
 
-.banner a{
+.banner a {
   position: relative;
   top: 45%;
   font-size: 5em;
@@ -117,7 +115,7 @@ section h1 {
   max-width: max-content;
 }
 
-.content p{
+.content p {
   display: flex;
   justify-content: space-around;
   font-size: 1.5em;
@@ -125,14 +123,14 @@ section h1 {
   vertical-align: center; */
 }
 
-.content p a{
+.content p a {
   position: relative;
   margin-top: 10%;
   /*font-size: 1.5em;*/
   margin-left: 5%;
 }
 
-.content p img{
+.content p img {
   position: relative;
   margin-left: 5%;
   margin-right: 5%;
@@ -143,7 +141,7 @@ section h1 {
 }
 
 .content-a {
-  color:black;
+  color: black;
   margin: 0;
   display: inline-block;
 }
@@ -156,13 +154,13 @@ section h1 {
   color: var(--dark);
 }
 
-.content-sect-1 img{
+.content-sect-1 img {
   max-width: 20em;
   max-height: 15em;
   min-height: auto;
 }
 
-.title h1{
+.title h1 {
   text-align: center;
   font-size: xx-large;
 }
@@ -180,7 +178,7 @@ section h1 {
   max-height: max-content;
 }
 
-.content-sect-2 p a{
+.content-sect-2 p a {
   color: white;
 }
 
@@ -198,7 +196,7 @@ section h1 {
 
 .lamp p {
   font-size: 2em;
-  color: white
+  color: white;
 }
 
 .lamp img {
@@ -236,7 +234,7 @@ section h1 {
 }
 
 .calc {
-  background-image: url('./images/cortador-de-gramajpg.jpg');
+  background-image: url("./images/cortador-de-gramajpg.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -280,7 +278,8 @@ section h1 {
 }
 
 /* Full-width input fields */
-.form-container input[type=text], .form-container input[type=password] {
+.form-container input[type="text"],
+.form-container input[type="password"] {
   width: -webkit-fill-available;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -289,20 +288,21 @@ section h1 {
 }
 
 /* When the inputs get focus, do something */
-.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
   background-color: #ddd;
   outline: none;
 }
 
 /* Set a style for the submit/login button */
 .form-container .btn {
-  background-color: #04AA6D;
+  background-color: #04aa6d;
   color: white;
   padding: 16px 20px;
   border: none;
   cursor: pointer;
   width: 100%;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   opacity: 0.8;
 }
 
@@ -312,7 +312,8 @@ section h1 {
 }
 
 /* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
+.form-container .btn:hover,
+.open-button:hover {
   opacity: 1;
 }
 
@@ -331,7 +332,7 @@ section h1 {
 footer {
   text-align: center;
   background-color: var(--light);
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   background-color: #343a40;
   color: white;
 }
@@ -343,7 +344,6 @@ footer {
   margin: 10% 5% 1% 5%;
   height: 80vh;
 }
-
 
 .calculator-cont {
   width: 100%;
@@ -364,13 +364,13 @@ footer {
 }
 
 .calculator-cont .btn {
-  background-color: #04AA6D;
+  background-color: #04aa6d;
   color: white;
   padding: 16px 20px;
   border: none;
   cursor: pointer;
   width: calc(100% - 30px);
-  margin-bottom:10px;
+  margin-bottom: 10px;
   opacity: 0.8;
 }
 

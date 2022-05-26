@@ -1,122 +1,190 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Energyze</title>
-  <link href="./index.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-  <script src="index.js" type="text/javascript"></script>
-</head>
-<body onload="letterPerSecond('Sustentabilidade Energética')">
-  <header class="navbar">
-    <h1>Energyze</h1>
-    <div class="nav-link">
-      <a href="#foot-anchor">Contatos</a>
-      <a href="subpages/calculadora.html">Calculadora</a>
-      <a href="index.html">Inicío</a>
-    </div>
-  </header>
-
-  <!--TODO: To create better name to class-->
-  <div class="banner">
-    <a id="phraseBanner1"></a>
-    <br>
-    <a id="phraseBanner2"></a>
-  </div>
-
-  <section class="content-sect-1">
-    <div class="title">
-      <h1>O que é Energia?</h1>
-    </div>
-    <div class="content">
-      <p>
-        
-        <img src="./images/energia-eolica.gif"/>
-        
-        <a>A evolução tecnógica está presente na humanidade desde seu primórdio,
-          e foi necessário muitos degraus na história para que fosse possível chegar
-          tecnológicamente onde estamos hoje. Quando nos referimos á energia, podemos dizer que
-          ela é uma grandeza física abstrata que se relaciona com a capacidade de produção de ação
-          e/ou movimento, que pode ser expressa em muitas formas como a cinética, química, potencial,
-          entre outras, e a energia de fato evoluiu junto com a tecnologia. Agora que você entendeu,
-          o conceito básico de energia, vamos ao que interessa: Estamos aqui para falar de:
-        <strong>energia elétrica.</strong></a>
-      </p>
-    </div>
-  </section>
-
-  <section class="content-sect-2">
-    <div class="title">
-      <h1>A energia no Brasil</h1>
-    </div>
-    <div class="content">
-      <p>
-        <a>A história da energia elétrica no Brasil começou pouco depois que Thomas Edison 
-          criou a lâmpada e exibiu sua criação nos Estados Unidos.
-          Esse evento chamou a atenção de D. Pedro II, um grande entusiasta de avanços científicos,
-          que logo entrou em contato com o inventor americano para trazer a novidade ao Brasil.
-          Hoje, menos de 150 anos depois, o Brasil está entre os maiores produtores de energia elétrica do mundo
-          com uma capacidade instalada de 174.412,6 MW. </a>
-        <img src="./images/energias-renovaveis.png" width="25%"/>
-      </p>
-    </div>
-  </section>
-  <section class="lamp">
-    <div class="content">
-      <p>
-        <img id="lampada" src="./images/apagada.jpg" onclick="lampada('./images/acesa.png')"/>
-        <a id="textoLampada">Contudo, <strong>NÃO</strong> estamos aqui para falar sobre a história da energia.
-        Clique na Lâmpada!</a>
-      </p>      
-      <!-- aqui é pra ser a lampada em js, com ela desligada vai estar escrito ao lado:-->
-      <!-- ao pressionar a lampada e a lampada ligar, o texto muda e vai aparecer:
-      <p>Estamos aqui para conscientizar sobre o uso da enérgica elétrica!
-      Você sabe o que são fontes <em>renovaveis</em> e fontes <em>não renovaveis<em> de energia?</p>  -->
-    </div>
-  </section>
-  <section class="content-sect-3">
-    <div class="title">
-      <h1>Fontes renovaveis e fontes não renovaveis</h1>
-    </div>
-    <div class="content" id="teste">
-      <p>
-        <a>Energias renováveis são aquelas que irão se regenerar espotaneamente com ou sem a intervenção humana, e de modo geral elas são considerar limpas pois não deixam residuos significativos na natureza. 
-          Exemplos:
-          <br>— Energia solar – Obtida através do calor e luz do sol.
-          <br>— Energia eólica - Obtida através da rotação de hélices em função do vento.
-          <br>— Energia geotérmica - Obtida através do calor proveniente do núcleo terrestre.
-          <br>— Energia hidrelétrica - Obtida através da cinética causada pela água em algum sistema.
-          <br>Já as energias não renovaveis são aquelas que quando esgotadas já não podemmais ser renegeradas, pois como sua formação depende da natureza, é um processo onde é necessário muito tempo. Mesmo que encontradas em grandes quantidades na natureza diversas vezes, continuam tendo reservas finitas, e de modo geral são consideradas energias poluentes, porque o seu uso prejudica o meio-ambiente de alguma maneira. 
-          Exemplos:
-          <br>— Energia nuclear – Obtida atrvés da fissão de matérias-primas como urânio.
-          <br>— Combustíveis fósseis - Obtida através da utilização de recursos como petróleo, carvão mineral, gás natural e etc.
-        </a>
-        <img src="./images/energia-eolica.gif"/></p>
-      
-        <p class="content-p" style="display: block;">Com isso em base, precisamos começar a incentivar cada vez mais a utilização de fontes que sejam
-        renovaveis, é uma responsabilidade nossa com o meio ambiente. Portanto é nosso dever cobrar das
-        grandes empresas que cada vez mais abandonem fontes finitas e poluentes, e também é nosso dever
-        nos adequarmos a essa sustentabilidade energetica!
-        <br><br><span style="display:block;">Se deseja saber mais sobre o assunto acesse à
-        <a href="https://brasil.un.org/pt-br/sdgs/7" target="_blank" class="content-a" style="margin: 0;">ODS 7</a>
-        da agenda 2030 de desenvolvimento sustentavel da ONU.</span></p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Energyze</title>
+    <link href="./index.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <script src="index.js" type="text/javascript"></script>
+  </head>
+  <body onload="letterPerSecond('Sustentabilidade Energética')">
+    <header class="navbar">
+      <h1>Energyze</h1>
+      <div class="nav-link">
+        <a href="#foot-anchor">Contatos</a>
+        <a href="subpages/calculadora.html">Calculadora</a>
+        <a href="index.html">Inicío</a>
       </div>
-  </section>
-  <!--Calculadora aqui-->
-  <!--Sobre nós
-  Nós somos estudantes de Ciência da Computação da Universidade Paulista,
-  e construimos esse website como projeto para as Atividades Práticas Supervisionadas!
-  -->
-  <!--Footer aqui com os contatos e direito reservados-->
-  <section class="foot-sec" id="foot-anchor">
-    <a href="https://github.com/zDarkOrdening" target="_blank"><img src="images/GitHub-Mark-Light-32px.png">Leonardo</a>
-    <a href="https://github.com/GaOS-Oliveira" target="_blank"><img src="images/GitHub-Mark-Light-32px.png">Gabriel</a>
-    <a href="https://github.com/yDanonin" target="_blank"><img src="images/GitHub-Mark-Light-32px.png">Fabiano</a>
-  </section>
-  <footer>
-    Copyright © 2022 Energyze - Todos os direitos reservados
-  </footer>
-</body>
+    </header>
+
+    <div class="banner">
+      <a id="phraseBanner1"></a>
+      <br />
+      <a id="phraseBanner2"></a>
+    </div>
+
+    <section class="content-sect-1">
+      <div class="title">
+        <h1>O que é Energia?</h1>
+      </div>
+      <div class="content">
+        <p>
+          <img src="./images/Projeto-IMS-1030x541.jpg" width="35%" />
+
+          <a
+            >A evolução tecnógica está presente na humanidade desde seu
+            primórdio, e foi necessário muitos degraus na história para que
+            fosse possível chegar tecnológicamente onde estamos hoje. Quando nos
+            referimos á energia, podemos dizer que ela é uma grandeza física
+            abstrata que se relaciona com a capacidade de produção de ação e/ou
+            movimento, que pode ser expressa em muitas formas como a cinética,
+            química, potencial, entre outras, e a energia de fato evoluiu junto
+            com a tecnologia. Agora que você entendeu, o conceito básico de
+            energia, vamos ao que interessa: Estamos aqui para falar de:
+            <strong>energia elétrica.</strong></a
+          >
+        </p>
+      </div>
+    </section>
+
+    <section class="content-sect-2">
+      <div class="title">
+        <h1>A energia no Brasil</h1>
+      </div>
+      <div class="content">
+        <p>
+          <a
+            >A história da energia elétrica no Brasil começou pouco depois que
+            Thomas Edison criou a lâmpada e exibiu sua criação nos Estados
+            Unidos. Esse evento chamou a atenção de D. Pedro II, um grande
+            entusiasta de avanços científicos, que logo entrou em contato com o
+            inventor americano para trazer a novidade ao Brasil. Hoje, menos de
+            150 anos depois, o Brasil está entre os maiores produtores de
+            energia elétrica do mundo com uma capacidade instalada de 174.412,6
+            MW.
+          </a>
+          <img src="./images/energias-renovaveis.png" width="35%" />
+        </p>
+      </div>
+    </section>
+    <section class="lamp">
+      <div class="content">
+        <p>
+          <img
+            id="lampada"
+            src="./images/apagada.jpg"
+            onclick="lampada('./images/acesa.png')"
+          />
+          <a id="textoLampada"
+            >Contudo, <strong>NÃO</strong> estamos aqui para falar sobre a
+            história da energia. Clique na Lâmpada!</a
+          >
+        </p>
+      </div>
+    </section>
+    <section class="content-sect-3">
+      <div class="title">
+        <h1>Fontes renovaveis e fontes não renovaveis</h1>
+      </div>
+      <div class="content" id="teste">
+        <p>
+          <a
+            >Energias renováveis são aquelas que irão se regenerar
+            espotaneamente com ou sem a intervenção humana, e de modo geral elas
+            são considerar limpas pois não deixam residuos significativos na
+            natureza. Exemplos: <br />— Energia solar – Obtida através do calor
+            e luz do sol. <br />— Energia eólica - Obtida através da rotação de
+            hélices em função do vento. <br />— Energia geotérmica - Obtida
+            através do calor proveniente do núcleo terrestre. <br />— Energia
+            hidrelétrica - Obtida através da cinética causada pela água em algum
+            sistema. <br />Já as energias não renovaveis são aquelas que quando
+            esgotadas já não podemmais ser renegeradas, pois como sua formação
+            depende da natureza, é um processo onde é necessário muito tempo.
+            Mesmo que encontradas em grandes quantidades na natureza diversas
+            vezes, continuam tendo reservas finitas, e de modo geral são
+            consideradas energias poluentes, porque o seu uso prejudica o
+            meio-ambiente de alguma maneira. Exemplos: <br />— Energia nuclear –
+            Obtida atrvés da fissão de matérias-primas como urânio. <br />—
+            Combustíveis fósseis - Obtida através da utilização de recursos como
+            petróleo, carvão mineral, gás natural e etc.
+          </a>
+          <img src="./images/energia-eolica.gif" />
+        </p>
+
+        <p class="content-p" style="display: block">
+          Com isso em base, precisamos começar a incentivar cada vez mais a
+          utilização de fontes que sejam renovaveis, é uma responsabilidade
+          nossa com o meio ambiente. Portanto é nosso dever cobrar das grandes
+          empresas que cada vez mais abandonem fontes finitas e poluentes, e
+          também é nosso dever nos adequarmos a essa sustentabilidade
+          energetica! <br /><br /><span style="display: block"
+            >Se deseja saber mais sobre o assunto acesse à
+            <a
+              href="https://brasil.un.org/pt-br/sdgs/7"
+              target="_blank"
+              class="content-a"
+              style="margin: 0"
+              >ODS 7</a
+            >
+            da agenda 2030 de desenvolvimento sustentavel da ONU.</span
+          >
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="foot-sec"
+      id="foot-anchor"
+      style="width: 98.4%; display: inline-flex; justify-content: center"
+    >
+      <a
+        href="https://github.com/zDarkOrdening"
+        target="_blank"
+        style="
+          margin: 0;
+          display: flex;
+          width: fit-content;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          margin-left: 0.6%;
+        "
+        ><img src="images/GitHub-Mark-Light-32px.png" />Leonardo</a
+      >
+      <a
+        href="https://github.com/GaOS-Oliveira"
+        target="_blank"
+        style="
+          margin: 0;
+          display: flex;
+          width: fit-content;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          margin-left: 0.6%;
+        "
+        ><img src="images/GitHub-Mark-Light-32px.png" />Gabriel</a
+      >
+      <a
+        href="https://github.com/yDanonin"
+        target="_blank"
+        style="
+          margin: 0;
+          display: flex;
+          width: fit-content;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          margin-left: 0.6%;
+        "
+        ><img src="images/GitHub-Mark-Light-32px.png" />Fabiano</a
+      >
+    </section>
+    <footer>Copyright © 2022 Energyze - Todos os direitos reservados</footer>
+  </body>
 </html>
